@@ -1,5 +1,12 @@
 import * as React from "react";
 
+
+/**
+ * React hook to highlight a heading a user is currently reading.
+ * @param headingList List of links to the headings (ex. "#title")
+ * @param options Options for the Intersectionobserver (ex. rootMargin)
+ * @returns The Id/Link to the heading, that is currently active.
+ */
 export function useActiveHeading(
   headingList: string[],
   options?: IntersectionObserverInit
