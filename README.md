@@ -13,18 +13,22 @@ npm install --save use-active-heading
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import * as React from "react";
 
-import { useMyHook } from 'use-active-heading'
+import { useActiveHeading } from "use-active-heading";
 
 const Example = () => {
-  const example = useMyHook()
+  const activeId = useActiveHeading(["#a", "#b"], {});
   return (
-    <div>
-      {example}
-    </div>
-  )
-}
+    <>
+      <p>ActiveId:{activeId}</p>
+      <h1 id="a">A</h1>
+      <h2 id="b" style={{ marginTop: "100vh" }}>
+        B
+      </h2>
+    </>
+  );
+};
 ```
 
 ## License
@@ -33,4 +37,4 @@ MIT © [sallto](https://github.com/sallto)
 
 ---
 
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
+Thanks to [create-react-hook](https://github.com/hermanya/create-react-hook) for making the npm process understandable.

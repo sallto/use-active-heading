@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import { useMyHook } from 'use-active-heading'
+import { useActiveHeading } from "use-active-heading";
 
 const App = () => {
-  const example = useMyHook()
+  const activeId = useActiveHeading(["#a", "#b"], {});
   return (
-    <div>
-      {example}
-    </div>
-  )
-}
-export default App
+    <>
+      <p>ActiveId:{activeId}</p>
+      <h1 id="a">A</h1>
+      <h2 id="b" style={{marginTop: "100vh"}}>B</h2>
+    </>
+  );
+};
+export default App;
