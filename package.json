@@ -1,6 +1,6 @@
 {
   "name": "use-active-heading",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Determine which section a user is reading with IntersectionObservers",
   "author": "sallto",
   "license": "MIT",
