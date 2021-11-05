@@ -11,6 +11,7 @@ npm install --save use-active-heading
 ```
 
 ## Usage
+`useActiveHeading` expects a list of ids of the indivdual headings and optionally Parameter for the IntersectionObserver, that powers the package in the background.
 
 ```tsx
 import * as React from "react";
@@ -30,7 +31,8 @@ const Example = () => {
   );
 };
 ```
-
+## Further Reading
+See [my blog](https://saller.to/blog/interactive-table-of-contents) for how this was built. (And its inner workings)
 ## License
 
 MIT © [sallto](https://github.com/sallto)
